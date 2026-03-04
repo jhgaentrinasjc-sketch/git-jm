@@ -1,0 +1,113 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #151616, #7d807f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 6px solid #4e73df;
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Name */
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #4e73df;
+    border-bottom: 2px solid #4e73df;
+    padding-bottom: 5px;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #4e73df;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #2e59d9;
+    transform: translateY(-3px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
